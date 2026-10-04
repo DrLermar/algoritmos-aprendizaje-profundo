@@ -9,7 +9,13 @@ Un perceptrón aprende a realizar la función binaria NAND con entradas $x_1$ y 
 
 En lo que sigue, los pesos finales de la iteración se convierten en los pesos iniciales de la siguiente.
 
-**Fórmula:** $w(Nuevo) = w(Anterior) + (r * e)(Xentrada)$
+**Fórmulas de las columnas:**
+* **Sensor ($c_i$):** $x_i * w_i$
+* **Suma ($s$):** $c_0 + c_1 + c_2$
+* **Red ($n$):** Si $s > t$ entonces $1$, de lo contrario $0$
+* **Error ($e$):** $z - n$
+* **Corrección ($d$):** $r * e$
+* **Pesos finales:** $w(Nuevo) = w(Anterior) + (r * e)(X_{entrada})$
 
 | $x_0$ | $x_1$ | $x_2$ | $z$ (Deseada) | $w_0$ (Inic) | $w_1$ (Inic) | $w_2$ (Inic) | $c_0$ | $c_1$ | $c_2$ | $s$ (Suma) | $n$ (Red) | $e$ (Error) | $d$ (Corr) | $w_0$ (Fin) | $w_1$ (Fin) | $w_2$ (Fin) |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
