@@ -1,0 +1,63 @@
+=========================
+
+MATLAB
+
+=========================
+
+Archivos de respaldo y autoguardado
+
+*.asv
+*~
+
+Caché y archivos temporales de Simulink
+
+slprj/
+*.slxc
+*.autosave
+
+Archivos compilados y binarios
+
+.mex
+*.mexa64
+*.mexw64
+*.mexw32
+*.mexmac
+
+(Opcional) Descomenta la siguiente línea si quieres evitar subir archivos de datos pesados
+
+*.mat
+
+=========================
+
+PYTHON
+
+=========================
+
+Archivos compilados y caché de Python
+
+pycache/
+*.py[cod]
+*$py.class
+
+Entornos virtuales (es muy importante no subir esto)
+
+venv/
+env/
+.env/
+.venv/
+env.bak/
+venv.bak/
+
+Jupyter Notebook (archivos de punto de control)
+
+.ipynb_checkpoints/
+
+Archivos de empaquetado y distribución
+
+build/
+dist/
+*.egg-info/
+
+Archivos de entorno y secretos (nunca subas tus contraseñas o tokens)
+
+.env
