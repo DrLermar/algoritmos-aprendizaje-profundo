@@ -12,7 +12,7 @@
 El diseño de la red neuronal para este problema incluye una capa oculta al no ser un problema separable linealmente.
 
 <div align="center">
-  <img src="imagenes/Perceptron multicapa.png" alt="Cuadricóptero y sus partes" width="500">
+  <img src="imagenes/Perceptron XOR.png" alt="Perceptron XOR" width="500">
 </div>
 
 Se entrenó esta red neuronal en Google collab en el código `Tarea 3_Algoritmos_AP.ipynb` en el que se obtuvo los pesos listados.
@@ -43,7 +43,7 @@ Como los pesos que se tienen están fuera del rango entre 0 y 1, es necesario no
 **Sumador inversor de $h_1$**
 
 <div align="center">
-  <img src="imagenes/Perceptron multicapa.png" alt="Cuadricóptero y sus partes" width="500">
+  <img src="imagenes/sumador_h1.png" alt="sumador_h1" width="500">
 </div>
 
 $$
@@ -69,7 +69,7 @@ $$
 Para que se puedan representar los pesos correctamente en el circuito es necesario un amplificador inversor a la entrada de $X_1$, quedando el circuito de la siguiente manera:
 
 <div align="center">
-  <img src="imagenes/Perceptron multicapa.png" alt="Cuadricóptero y sus partes" width="500">
+  <img src="imagenes/sumador_h1_2.png" alt="sumador_h1" width="500">
 </div>
 
 $$
@@ -79,7 +79,7 @@ $$
 Para completar esta neurona en circuito se añade un comparador.
 
 <div align="center">
-  <img src="imagenes/Perceptron multicapa.png" alt="Cuadricóptero y sus partes" width="500">
+  <img src="imagenes/sumador_h1_3.png" alt="sumador_h1" width="500">
 </div>
 
 **Sumador inversor de $h_2$**
@@ -99,7 +99,7 @@ $$
 El circuito con amplificadores para esta neurona sería el siguiente:
 
 <div align="center">
-  <img src="imagenes/Perceptron multicapa.png" alt="Cuadricóptero y sus partes" width="500">
+  <img src="imagenes/sumador_h2.png" alt="sumador_h2" width="500">
 </div>
 
 $$
@@ -125,7 +125,7 @@ $$
 El circuito quedaría de la siguiente manera:
 
 <div align="center">
-  <img src="imagenes/Perceptron multicapa.png" alt="Cuadricóptero y sus partes" width="500">
+  <img src="imagenes/sumador_y.png" alt="sumador_y" width="500">
 </div>
 
 $$
@@ -135,13 +135,13 @@ $$
 Se puede simplificar este circuito cambiando el comparador.
 
 <div align="center">
-  <img src="imagenes/Perceptron multicapa.png" alt="Cuadricóptero y sus partes" width="500">
+  <img src="imagenes/sumador_y_2.png" alt="sumador_y" width="500">
 </div>
 
 Teniendo ahora el circuito completo:
 
 <div align="center">
-  <img src="imagenes/Perceptron multicapa.png" alt="Cuadricóptero y sus partes" width="500">
+  <img src="imagenes/red_hardware.png" alt="red_hardware" width="500">
 </div>
 
 El circuito se plantea con $5V$, al incluir los bias en las ecuaciones de las salidas de las neuronas el voltaje lógico es $0V$, para los comparadores de las neuronas de la capa oculta $V_o > 0 \rightarrow 1$ y para el comparador final $V_o < 0 \rightarrow 1$.
