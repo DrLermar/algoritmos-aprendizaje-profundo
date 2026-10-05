@@ -15,7 +15,7 @@
 * $a=0.05$
 
 <div align="center">
-  <img src="imagenes/Perceptron multicapa.png" alt="Cuadricóptero y sus partes" width="500">
+  <img src="imagenes/Perceptron multicapa.png" alt="Perceptron" width="500">
 </div>
 
 ## Cálculo de red
