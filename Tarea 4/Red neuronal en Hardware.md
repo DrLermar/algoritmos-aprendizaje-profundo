@@ -53,3 +53,6 @@ Se proponen resistencias $R_f$ de $2k\Omega$ con esto se calculan las resistenci
 | $R_1$ | $0.8$ | $2.5\ k\Omega$ |
 | $R_2$ | $0.2$ | $10\ k\Omega$ |
 | $R_3$ | $0.1$ | $20\ k\Omega$ |
+
+Se llevó a cabo en circuito, se puede ver su funcionamiento en el video `Tarea 4. Video Red Neuronal.mp4`.
+
