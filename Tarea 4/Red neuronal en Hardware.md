@@ -58,9 +58,11 @@ Se llevó a cabo en circuito, se puede ver su funcionamiento en el video `Tarea 
 
 El esquema del circuito hecho a detalle se observa en las siguientes imagenes.
 
+
 <div align="center">
   <img src="imagenes/circuito_1.png" alt="Circuito" width="400">
 </div>
+
 
 <div align="center">
   <img src="imagenes/circuito_2.png" alt="Circuito" width="400">
