@@ -60,10 +60,10 @@ El esquema del circuito hecho a detalle se observa en las siguientes imagenes.
 
 
 <div align="center">
-  <img src="imagenes/circuito_1.png" alt="Circuito" width="400">
+  <img src="imagenes/circuito_1.png" alt="Circuito" width="600">
 </div>
 
 
 <div align="center">
-  <img src="imagenes/circuito_2.png" alt="Circuito" width="400">
+  <img src="imagenes/circuito_2.png" alt="Circuito" width="600">
 </div>
