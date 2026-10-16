@@ -1,0 +1,118 @@
+[System]
+Name='Invernadero2'
+Type='mamdani'
+Version=2.0
+NumInputs=4
+NumOutputs=5
+NumRules=30
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='temperatura'
+Range=[0 50]
+NumMFs=5
+MF1='Mfrio':'trapmf',[-11.3 -1.25 2.71164021164021 9.99]
+MF2='frio':'trimf',[6.01851851851852 10 16.9]
+MF3='normal':'trimf',[12.6322751322751 18.6322751322751 22.6322751322751]
+MF4='caliente':'trimf',[19.5 23.6 28.505291005291]
+MF5='Mcaliente':'trapmf',[25.5 30.0925925925926 50.1 59.4]
+
+[Input2]
+Name='CantidiadLuz'
+Range=[0 12000]
+NumMFs=4
+MF1='Mpoca':'trimf',[0 1410 3000]
+MF2='poca':'trimf',[2460 3825.39682539683 5350]
+MF3='normal':'trimf',[4560 5825.39682539683 7220]
+MF4='mucha':'trapmf',[6620 7890 12015.873015873 12900]
+
+[Input3]
+Name='Humedad'
+Range=[0 100]
+NumMFs=3
+MF1='poca':'trapmf',[-36 -4 24.2063492063492 49.9]
+MF2='normal':'trimf',[25.3 49.3386243386243 73.9]
+MF3='mucha':'trapmf',[49.6 75.2645502645503 104 136]
+
+[Input4]
+Name='hora'
+Range=[0 24]
+NumMFs=3
+MF1='mañana':'trapmf',[-8.64 -0.96 4.15873015873016 8.35]
+MF2='dia':'trimf',[5.62 11.7 17.4285714285714]
+MF3='noche':'trapmf',[15.4 18.5714285714286 25 32.6]
+
+[Output1]
+Name='ventilador'
+Range=[0 5]
+NumMFs=3
+MF1='off':'trimf',[-2.2 0.0463 0.191798941798942]
+MF2='medio':'trimf',[2.35 2.53306878306878 2.72]
+MF3='on':'trimf',[4.80820105820106 5 7]
+
+[Output2]
+Name='resistencias'
+Range=[0 5]
+NumMFs=3
+MF1='off':'trimf',[-2 0 0.152116402116402]
+MF2='medio':'trimf',[2.32 2.5 2.69179894179894]
+MF3='on':'trimf',[4.87433862433862 5 7]
+
+[Output3]
+Name='percianas'
+Range=[0 5]
+NumMFs=3
+MF1='cierra':'trimf',[-2 0 0.152116402116402]
+MF2='medio':'trimf',[2.35 2.48015873015873 2.59]
+MF3='abre':'trimf',[4.86111111111111 5 7]
+
+[Output4]
+Name='luces'
+Range=[0 5]
+NumMFs=3
+MF1='off':'trimf',[-2 0 0.125661375661376]
+MF2='medio':'trimf',[2.37 2.5 2.63888888888889]
+MF3='on':'trimf',[4.87433862433862 5 7]
+
+[Output5]
+Name='humificador'
+Range=[0 5]
+NumMFs=2
+MF1='off':'trimf',[-2 0 0.1653]
+MF2='on':'trimf',[4.835 5 7]
+
+[Rules]
+0 1 0 1, 0 0 1 1 0 (1) : 1
+0 1 0 2, 0 0 3 3 0 (1) : 1
+0 1 0 3, 0 0 1 1 0 (1) : 1
+0 2 0 1, 0 0 1 1 0 (1) : 1
+0 2 0 2, 0 0 3 3 0 (1) : 1
+0 2 0 3, 0 0 1 1 0 (1) : 1
+0 3 0 1, 0 0 1 1 0 (1) : 1
+0 3 0 2, 0 0 2 1 0 (1) : 1
+0 3 0 3, 0 0 1 1 0 (1) : 1
+0 4 0 1, 0 0 1 1 0 (1) : 1
+0 4 0 2, 0 0 1 1 0 (1) : 1
+0 4 0 3, 0 0 1 1 0 (1) : 1
+0 0 1 0, 1 0 0 0 2 (1) : 1
+0 0 2 0, 1 0 0 0 1 (1) : 1
+0 0 3 0, 3 0 0 0 1 (1) : 1
+1 0 0 1, 1 3 0 0 0 (1) : 1
+1 0 0 2, 1 3 0 0 0 (1) : 1
+1 0 0 3, 1 3 0 0 0 (1) : 1
+2 0 0 1, 1 1 0 0 0 (1) : 1
+2 0 0 2, 1 2 0 0 0 (1) : 1
+2 0 0 3, 1 1 0 0 0 (1) : 1
+3 0 0 1, 2 1 0 0 0 (1) : 1
+3 0 0 2, 2 1 0 0 0 (1) : 1
+3 0 0 3, 2 1 0 0 0 (1) : 1
+4 0 0 1, 3 1 0 0 0 (1) : 1
+4 0 0 2, 3 1 0 0 0 (1) : 1
+4 0 0 3, 3 1 0 0 0 (1) : 1
+5 0 0 1, 3 1 0 0 0 (1) : 1
+5 0 0 2, 3 1 0 0 0 (1) : 1
+5 0 0 3, 3 1 0 0 0 (1) : 1
