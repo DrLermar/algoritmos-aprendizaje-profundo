@@ -2,6 +2,8 @@
 
 El control difuso es una forma de control basado en una mimetización de como toma decisiones el ser humano, donde en ocaciones las decisiones no son basadas en la determinación absoluta de una o varias opciones.
 
+Es utilizado para modelar sistemas de decisión complejos que son dificiles de describir con otros modelos.
+
 ## Conceptos fundamentales
 
 * **Reglas difusas**: se basan en oraciones condicionales estructuradas con if-then (si-entonces) las cuales rigen el comportamiento del control.
